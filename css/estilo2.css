@@ -15,18 +15,18 @@ body{
     height: 100vh;
     background-color: beige;
 }
-@media screen and (min-width: 360px) and (max-width: 768px) {
-    h1{
-        font-size: 30px;
-        /*color: indigo;*/
-        color:#230f6b;
-        text-align: center;
-        text-shadow: 2px 4px 2px #cdd5d8;
-    }
-    body{
-        width: 50%;
+
+@media screen and (min-width: 480px) and (max-width: 780px){
+    .menu__boton{
+        display: block;
     }
 }
+
+
+@media screen and (max-width: 480px){
+
+}
+
 
 #grilla {
 background-color: beige;
