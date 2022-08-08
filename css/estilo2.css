@@ -84,6 +84,13 @@ h1{
 .ancla{
     text-decoration: none;
 }
+
+.menu__boton:hover{
+    background-color:ghostwhite;
+    box-shadow: 12px 12px 25px #592A08; 
+    
+}
+
 main {
     grid-area: servicios;
     grid-template-columns: repeat(3, 1fr);
