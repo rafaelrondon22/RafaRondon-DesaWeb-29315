@@ -140,7 +140,7 @@ main {
 .section{
     display:flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content:space-around;
     align-items: center;
 
 }
@@ -167,7 +167,7 @@ main {
     box-shadow: 7px 7px 10px #592A08; 
     object-fit: cover;
 }
-
+/*--- Clase de Pagina de Servicios----*/
 .contenedor{
     display: grid;
     grid-template-columns: auto auto auto;
@@ -208,7 +208,7 @@ footer {
      
     
  }
-
+/*
  .describa__footer{
     font-family: 'Roboto', sans-serif;
     font-style: normal;
@@ -216,7 +216,7 @@ footer {
     font-size: 45px;
     text-align: center;
  }
-
+*/
 
 .redes{
     display: flex;
@@ -228,7 +228,14 @@ footer {
     margin-bottom: 5px;
     margin-left:5;
     margin-right: 5px;
-    object-fit: cover;
+   object-fit: cover;
+}
+
+.fa-square-facebook{
+    color:rgb(7, 15, 179)
+}
+.fa-whatsapp{
+    color: rgb(47, 233, 22);
 }
 
 .redes__ig{
@@ -243,6 +250,7 @@ footer {
     height: 62px;
     align-content: center;
 }
+
 
 .form{
     color:#230f6b;
