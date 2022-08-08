@@ -16,17 +16,6 @@ body{
     background-color: beige;
 }
 
-@media screen and (min-width: 480px) and (max-width: 780px){
-    .menu__boton{
-        display: block;
-    }
-}
-
-
-@media screen and (max-width: 480px){
-
-}
-
 
 #grilla {
 background-color: beige;
@@ -132,12 +121,13 @@ main {
     display:flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    align-items: center;
 
 }
 
 .galeria{
     position:relative;
-    cursor:pointer;
+    cursor:zoom-in;
     overflow: hidden;
     width: 300px;
     height: 300px;
@@ -145,8 +135,16 @@ main {
     margin-bottom: 10px;
     margin-left: 10px;
     margin-right: 10px;
+    border-radius: 10px;
     object-fit: cover;
     
+}
+.galeria:hover{
+    width: 400px;
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: 7px 7px 15px #592A08; 
+    object-fit: cover;
 }
 
 .contenedor{
@@ -240,6 +238,19 @@ footer {
     margin-bottom: 12px;
     margin-left: 15px;
 }
+
+/* Adaptación de Media Queries*/
+@media screen and (min-width: 480px) and (max-width: 780px){
+    .menu__boton{
+        display: block;
+    }
+}
+
+
+@media screen and (max-width: 480px){
+
+}
+
 /* .taxipet{
     display: flex;
     flex-direction: column;
