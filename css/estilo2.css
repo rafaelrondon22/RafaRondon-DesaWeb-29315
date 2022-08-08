@@ -137,6 +137,7 @@ main {
     margin-right: 10px;
     border-radius: 10px;
     object-fit: cover;
+    transition:all 1s;
     
 }
 .galeria:hover{
