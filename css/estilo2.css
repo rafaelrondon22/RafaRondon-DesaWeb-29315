@@ -230,6 +230,9 @@ footer {
     margin-right: 5px;
    object-fit: cover;
 }
+.fa-envelope{
+    color: white;
+}
 
 .fa-square-facebook{
     color:rgb(7, 15, 179)
