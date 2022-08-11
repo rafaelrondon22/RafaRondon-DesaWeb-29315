@@ -76,7 +76,7 @@ header {
 
 h1{
     font-family: 'Permanent Marker', cursive;
-    font-size: 53px;
+    font-size: 60px;
     /*color: indigo;*/
     color:#230f6b;
     text-align: center;
@@ -140,10 +140,11 @@ main {
     font-family: 'Poppins', sans-serif;
     font-style:initial;
     font-weight: bolder;
-    font-size: 50px;
+    font-size: 48px;
     text-align: center;
     
 }
+
 
 .describa{
     font-family: 'Poppins', sans-serif;
@@ -212,7 +213,7 @@ main {
     text-transform:capitalize;
     margin-bottom: 20px;
     animation-name: anima;
-    animation-duration: 4s;
+    animation-duration: 3s;
     
 
 }
@@ -283,13 +284,13 @@ main {
 /*--- Clase de Pagina de Servicios----*/
 .contenedor{
     display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto;
     align-items: center;
       
 }
 .contenedor__titulo{
-    grid-column: 1 / span 3;
+    grid-row: 1 / span 3;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: bolder;
@@ -372,6 +373,9 @@ footer {
 
 /* Adaptación de Media Queries*/
 @media screen and (max-width: 400px) {
+    .titulo{
+        font-size: 40px;
+    }
     .describa{
         font-size: 22px;
     }
@@ -399,6 +403,9 @@ footer {
 
 
 @media screen and (max-width: 800px) {
+    .titulo{
+        font-size: 43px;
+    }
     .grid-describa{
         display: grid;
         grid-template-columns: 1fr;
