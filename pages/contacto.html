@@ -13,7 +13,7 @@
     <title> TrasLaMascota | Contactos </title>
 </head>
 <body>
-    <div id="grilla" class="container">
+    <div id="grilla">
         <header class="header">
             <div class="header__titulo">
                 <img class="logo" src="../Images/logo.png" alt="logo">
@@ -44,7 +44,19 @@
                 <div class="describa">
                     <img src="../Images/Contacto/icono-llamanos-1.png" alt="">
                 </div>
-                <form action="" class="form">
+                <form>
+                    <div class="mb-3 form">
+                        <label for="Nombre" class="form-label">Nombres</label>
+                        <input type="text" class="form-control" name="Nombres" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3 form">
+                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+                
+                <!-- <form action="" class="form">
                     <label for="">Nombres</label>
                     <input type="text" name="Nombres" id="" placeholder="Nombres" required><br>
                     <label for="">Apellidos</label>
@@ -59,7 +71,7 @@
                     <input type="text" name="PuntoEncuentro" placeholder="Indique el Destino Final del Viaje"><br>
                     <input type="submit" value="Enviar">
                     <input type="reset" value="Limpiar">
-                </form>
+                </form> -->
             </section>
         </main>
         <footer>

@@ -53,7 +53,7 @@ header {
 }
 .logo{
     padding: 5px;
-    width: 7rem;
+    width: 6rem;
     border-radius: 20px;
     animation-name: palpita;
     animation-duration: 1s;
@@ -94,7 +94,7 @@ h1:hover{
     text-align: center;
     word-spacing: 15px;
     font-family: 'Roboto', sans-serif;
-    font-size:28px;
+    font-size:25px;
       
 }
 .menu__boton{
@@ -140,7 +140,7 @@ main {
     font-family: 'Poppins', sans-serif;
     font-style:initial;
     font-weight: bolder;
-    font-size: 48px;
+    font-size: 35px;
     text-align: center;
     
 }
@@ -189,12 +189,6 @@ main {
     justify-content:space-around;
     align-items: center;
 
-}
-
-.grid-describa{
-    display: grid;
-    grid-template-columns: 50% auto;
-    
 }
 
 
@@ -311,6 +305,8 @@ main {
     margin: 2%;
 }
 
+
+
 footer {
     background: rgb(255,238,195);
     background: radial-gradient(circle, rgba(255,238,195,1) 32%, rgba(176,154,121,1) 76%);
@@ -356,6 +352,9 @@ footer {
 
 
 .form{
+    display: flex;
+    flex-direction: row;
+    width: 40%;
     color:#230f6b;
     font-family: 'Poppins', sans-serif;
     text-align:center;
@@ -419,11 +418,7 @@ footer {
         height: 250px;
 
     }
-    .items__gif{
-        width: 300px;
-        height: 300px;
-
-    }
+    
     .items__gif:hover{
         width: 350px;
         height: 350px;
