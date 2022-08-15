@@ -38,40 +38,85 @@
             </nav>
         </header>
         <main>
-            <section>
-                <h2 class="titulo">¿Necesitas un Traslado para tu Mascota?</h2>
-                <h2 class="titulo">Escribenos</h2>
-                <div class="describa">
-                    <img src="../Images/Contacto/icono-llamanos-1.png" alt="">
+            <section class="formulario">
+                <h2 class="titulo">¿Necesitas un Traslado para tu Mascota? <br> Contactanos!</h2>
+                <div class="formulario__order">
+                    <div class="section">
+                        <img class="items__gif" src="../Images/Mascotas/IMG_1256.JPG" alt="Contacto">
+                    </div>
+                    <form>
+                        <div class="row align-items-stretch">
+                            <div class="col col-sm-3 form">
+                                <label for="NombresMasc" class="form-label align-items-stretch">Nombre de la Mascota</label>
+                                <input type="text" class="form-control" name="NombreMasc" placeholder="Nombre de la Mascota" required>
+                            </div>
+                            <div class="col col-sm-3 form">
+                                <label for="RazaMasc" class="form-label">Raza de la Mascota</label>
+                                <input type="text" class="form-control" name="RazaMasc" placeholder="Raza de la Mascota" required>
+                            </div>
+                            <div class="col col-sm-10 form">
+                                <label for="Dir_ori" class="form-label">Dirección Completa del origen</label>
+                                <input type="text" class="form-control" name="Dir_ori" placeholder="Dirección desde donde inicia el Tralado" required>
+                            </div>
+                            <div class="col col-sm-10 form">
+                                <label for="Dir_Dest" class="form-label">Dirección Completa del Destino</label>
+                                <input type="text" class="form-control" name="Dir_Dest" placeholder="Dirección donde finaliza el servicio" required>
+                            </div>
+                            <div class="col col-sm-3 form">
+                                <label for="Nombres" class="form-label">Nombre del acompañante</label>
+                                <input type="text" class="form-control" name="Nombres" placeholder="Nombres" required>
+                            </div>
+                            <div class="col col-sm-3 form">
+                                <label for="Apellidos" class="form-label">Apellidos del Acompañante</label>
+                                <input type="text" class="form-control" name="Apellidos" placeholder="Apellidos" required>
+                            </div>
+                            <div class="col col-sm-3 form">
+                                <label for="Documento" class="form-label">Número de Documento</label>
+                                <input type="number" class="form-control" name="Documento" placeholder="Numero de Documento" required>
+                            </div>
+                            <div class="col col-sm-3 form">
+                                <label for="Telefono" class="form-label">Ingrese Su numero de Telefono</label>
+                                <input type="tel" class="form-control" name="Telefono" placeholder="Numero Telefonico" required>
+                            </div>
+                            <div class="col col-sm-2 form">
+                                <label for="fecha" class="form-label">Indique la Fecha del Servicio</label>
+                                <input type="date" class="form-control" name="Telefono" placeholder="Fecha del Servicio" required>
+                            </div>
+                            <div class="col col-sm-2 form">
+                                <label for="hora" class="form-label">Indique la Hora del Servicio</label>
+                                <input type="time" class="form-control" name="hora" placeholder="Hora del Servicio" required>
+                            </div>
+                            <div class="col col-sm-2 form align-items-lg-stretch">
+                                <label for="Medio" class="form-label">¿Dónde Nos Conociste?</label>
+                                <select name="provincia" class="form-select">
+                                    <option value="Google">Google</option>
+                                    <option value="Instagram" selected>Instagram</option>
+                                    <option value="Facebook">Facebook</option>
+                                    <option value="Tiktok">TikTok</option>
+                                    <option value="Veterinaria">veterinaria</option>
+                                    <option value="Vecino">Vecino</option>
+                                    <option value="Otro">Otro</option>
+                                </select>  
+                            </div>
+                            <div class="col col-sm-10 form">
+                                <label for="Detalle" class="form-label">Si marco otro, describa cual fue el medio que nos conocio</label>
+                                <input type="text" class="form-control" name="Detalle" placeholder="¿Cómo nos conociste?">
+                            </div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input form" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                                <label class="form-check-label form" for="flexSwitchCheckDefault">¿El Servicio es con Retorno?</label>
+                            </div>
+                            <div class="col col-sm-10 form">
+                                <input class="btn btn-primary" type="submit" value="Enviar">
+                                <input class="btn btn-primary" type="reset" value="Limpiar">
+                            </div>
+                        </div>
+                    </form>
                 </div>
-                <form>
-                    <div class="mb-3 form">
-                        <label for="Nombre" class="form-label">Nombres</label>
-                        <input type="text" class="form-control" name="Nombres" id="exampleInputEmail1" aria-describedby="emailHelp">
-                    </div>
-                    <div class="mb-3 form">
-                        <label for="exampleInputPassword1" class="form-label">Password</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1">
-                    </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                </form>
-                
-                <!-- <form action="" class="form">
-                    <label for="">Nombres</label>
-                    <input type="text" name="Nombres" id="" placeholder="Nombres" required><br>
-                    <label for="">Apellidos</label>
-                    <input type="text" name="Apellidos" id=""placeholder="Apellidos" required><br>
-                    <label for="">Ingrese Su Numero de Documento</label>
-                    <input type="number" name="" id="" placeholder="Numero de Documento" required><br>
-                    <label for="">Indique su Numero de Telefono</label>
-                    <input type="tel" name="Telefono" id="" placeholder="Numero Telefonico" required><br>
-                    <label for="">Punto de encuentro</label>
-                    <input type="text" name="PuntoEncuentro" placeholder="Indique la direccion donde inicia el servicio">
-                    <label for="">Destino Final del Servicio</label>
-                    <input type="text" name="PuntoEncuentro" placeholder="Indique el Destino Final del Viaje"><br>
-                    <input type="submit" value="Enviar">
-                    <input type="reset" value="Limpiar">
-                </form> -->
+                <div class="localiza">
+                    <p class="form">Zona de atención</p>
+                    <iframe class="form" src="https://www.google.com/maps/d/embed?mid=1PU-jjJbJoj-J2hM0WJzvOpU5YXQJtLR1&ehbc=2E312F" width="300" height="200"></iframe>
+                </div>
             </section>
         </main>
         <footer>

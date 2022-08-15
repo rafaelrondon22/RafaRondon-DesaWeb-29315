@@ -40,7 +40,7 @@ header {
    background-image:
     linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(99, 117, 19, 0.73)),
     url(../Images/Mascotas/header2.jpg);
-   background-repeat: no-repeat;
+   background-repeat:round;
       
 }
 
@@ -185,13 +185,19 @@ main {
 
 .section{
     display:flex;
+    flex-direction:row;
     flex-wrap: wrap;
     justify-content:space-around;
-    align-items: center;
+    object-fit: cover;
+    
 
 }
 
-
+.grid-describa{
+    display: grid;
+    grid-template-columns: 50% auto;
+    
+}
 
 .items-describa{
     display: flex;
@@ -211,6 +217,31 @@ main {
     
 
 }
+
+.formulario{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto 60%;
+    height: 100%;
+
+}
+
+
+.formulario__order{
+    display: grid;
+    grid-template-columns: auto auto;
+    
+}
+.localiza{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+}
+
+
+
 
 @keyframes anima{
     from {
@@ -349,14 +380,14 @@ footer {
     margin-bottom: 25px;
 }
 
-
+/*--- Clase de Pagina de Formulario----*/
 
 .form{
-    display: flex;
-    flex-direction: row;
-    width: 40%;
+    /* width: 40%; */
+    width: auto;
     color:#230f6b;
     font-family: 'Poppins', sans-serif;
+    text-shadow: 2px 2px 3px #676a6b;
     text-align:center;
     font-weight:bolder;
     font-size:larger;
@@ -369,6 +400,7 @@ footer {
     margin-bottom: 12px;
     margin-left: 15px;
 }
+
 
 /* Adaptación de Media Queries*/
 @media screen and (max-width: 400px) {
@@ -430,13 +462,5 @@ footer {
 
 
 
-/* .taxipet{
-    display: flex;
-    flex-direction: column;
-    position:relative;
-    width: 7rem;
-}
-*/
- 
 
 
