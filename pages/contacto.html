@@ -16,8 +16,8 @@
     <div id="grilla">
         <header class="header">
             <div class="header__titulo">
-                <img class="logo" src="../Images/logo.png" alt="logo">
-                <h1 class="animate__animate animate__heartBeat"> TrasLaMascota </h1>
+                <a class="ancla" href="../index.html"><img class="logo" src="../Images/logo.png" alt="logo"></a>
+                <a class="ancla" href="../index.html"><h1 class="animate__animate animate__heartBeat"> TrasLaMascota </h1></a>
             </div>
             <nav class="menu">
                 <div class="menu__boton">
@@ -41,12 +41,13 @@
             <section class="formulario">
                 <h2 class="titulo">¿Necesitas un Traslado para tu Mascota? <br> Contactanos!</h2>
                 <div class="formulario__order">
-                    <div class="section">
+                    <div class="localiza">
+                        <p class="form">Animate!! Escribenos!</p>
                         <img class="items__gif" src="../Images/Mascotas/IMG_1256.JPG" alt="Contacto">
                     </div>
                     <form>
-                        <div class="row align-items-stretch">
-                            <div class="col col-sm-3 form">
+                        <div class="row justify-content-sm-center align-items-center">
+                            <div class="col col-sm-4 form">
                                 <label for="NombresMasc" class="form-label align-items-stretch">Nombre de la Mascota</label>
                                 <input type="text" class="form-control" name="NombreMasc" placeholder="Nombre de la Mascota" required>
                             </div>
@@ -78,15 +79,15 @@
                                 <label for="Telefono" class="form-label">Ingrese Su numero de Telefono</label>
                                 <input type="tel" class="form-control" name="Telefono" placeholder="Numero Telefonico" required>
                             </div>
-                            <div class="col col-sm-2 form">
+                            <div class="col col-sm-3 form">
                                 <label for="fecha" class="form-label">Indique la Fecha del Servicio</label>
                                 <input type="date" class="form-control" name="Telefono" placeholder="Fecha del Servicio" required>
                             </div>
-                            <div class="col col-sm-2 form">
+                            <div class="col col-sm-3 form">
                                 <label for="hora" class="form-label">Indique la Hora del Servicio</label>
                                 <input type="time" class="form-control" name="hora" placeholder="Hora del Servicio" required>
                             </div>
-                            <div class="col col-sm-2 form align-items-lg-stretch">
+                            <div class="col col-sm-8 form align-items-lg-stretch">
                                 <label for="Medio" class="form-label">¿Dónde Nos Conociste?</label>
                                 <select name="provincia" class="form-select">
                                     <option value="Google">Google</option>
@@ -98,7 +99,7 @@
                                     <option value="Otro">Otro</option>
                                 </select>  
                             </div>
-                            <div class="col col-sm-10 form">
+                            <div class="col col-sm-8 form">
                                 <label for="Detalle" class="form-label">Si marco otro, describa cual fue el medio que nos conocio</label>
                                 <input type="text" class="form-control" name="Detalle" placeholder="¿Cómo nos conociste?">
                             </div>
@@ -112,30 +113,30 @@
                             </div>
                         </div>
                     </form>
-                </div>
-                <div class="localiza">
-                    <p class="form">Zona de atención</p>
-                    <iframe class="form" src="https://www.google.com/maps/d/embed?mid=1PU-jjJbJoj-J2hM0WJzvOpU5YXQJtLR1&ehbc=2E312F" width="300" height="200"></iframe>
+                    <div class="localiza">
+                        <p class="form">Zona de atención</p>
+                        <iframe class="maps" src="https://www.google.com/maps/d/embed?mid=1PU-jjJbJoj-J2hM0WJzvOpU5YXQJtLR1&ehbc=2E312F" width="480" height="360"></iframe>
+                    </div>
                 </div>
             </section>
         </main>
         <footer>
             <h3 class="describa">Redes Sociales</h3>
-            <div class="redes">
-                <i class="fa-solid fa-envelope fa-3x" style="color:#FFFFFF;" ></i>
-            </div>
-            <div class="redes">
-                <img class="redes__ig" src="../Images/SocialMedia/IG.png" alt="Instagram">
-            </div>
-            <div class="redes">
-                <i class="fa-brands fa-square-facebook fa-4x"></i>
-            </div>
-            <div class="redes">
-                <i class="fa-brands fa-tiktok fa-3x"></i>
-            </div>                
-            <div class="redes">
-                <i class="fa-brands fa-whatsapp fa-3x"></i>
-            </div>   
+                <div class="redes">
+                    <a href="#"><i class="fa-solid fa-envelope fa-3x"></i></a>
+                </div>
+                <div class="redes">
+                    <a href="https://www.instagram.com/traslamascota/"><img class="redes__ig" src="../Images/SocialMedia/IG.png" alt="Instagram"></a>
+                </div>
+                <div class="redes">
+                    <a href="https://www.facebook.com/traslamascota"><i class="fa-brands fa-square-facebook fa-4x"></i></a>
+                </div>
+                <div class="redes">
+                    <a href="https://www.tiktok.com/@traslamascota?lang=es"><i class="fa-brands fa-tiktok fa-3x"></i></a>
+                </div>                
+                <div class="redes">
+                    <a href="https://wa.me/message/CPI3FRIOEGW4M1"><i class="fa-brands fa-whatsapp fa-3x"></i></a>
+                </div>   
             <p class="describa">Derechos Reservados</p>
         </footer>
     </div>
