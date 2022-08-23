@@ -100,14 +100,14 @@ h1:hover{
 }
 .menu__boton{
     display: inline-block;
-    background-color: aliceblue;
+    background-color: $color-menuboton;
     margin-top: 5px;
     padding-left: 1%;
     padding-right: 1%;
     margin-bottom: 12px;
     margin:1%;
     border-radius: 10px;
-    box-shadow: 7px 7px 15px #592A08; 
+    box-shadow: 7px 7px 15px $box-shadow; 
 }
 .ancla{
     text-decoration: none;
@@ -117,7 +117,7 @@ h1:hover{
     /*padding-left: 1.5%;
     padding-right: 1.5%;*/
     background-color:ghostwhite;
-    box-shadow: 15px 15px 25px #592A08; 
+    box-shadow: 15px 15px 25px $box-shadow; 
     transform: scale(1.2);
 
     
@@ -126,9 +126,9 @@ h1:hover{
 main {
     grid-area: servicios;
     grid-template-columns: repeat(3, 1fr);
-    color: rgb(99, 23, 23);
-    background: rgb(255,238,195);
-    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(148, 156, 113, 0.73)), url(../Images/Fondos/fondo.jpg);
+    color: $color-texto-main;
+    background: $backgroung-main;
+    background-image: $backgroung-main-img, url(../Images/Fondos/fondo.jpg);
     border-radius: 5px;
  }
 
@@ -289,7 +289,7 @@ main {
     width: 450px;
     height: 450px;
     border-radius: 10px;
-    box-shadow: 7px 7px 10px #592A08; 
+    box-shadow: 7px 7px 10px $box-shadow; 
     object-fit: cover;
 }
 
@@ -312,7 +312,7 @@ main {
 .galeria:hover{
     width: 400px;
     height: 400px;
-    box-shadow: 7px 7px 10px #592A08; 
+    box-shadow: 7px 7px 10px $box-shadow; 
     object-fit: cover;
 }
 /*--- Clase de Pagina de Servicios----*/
@@ -339,7 +339,7 @@ main {
     font-size: 30px;
     font-style:italic;
     font-weight: bolder;
-    color:#230f6b;
+    color:$color-h1;
     text-shadow: 2px 3px 2px #888d8f;
     padding: 2%;
     margin: 2%;
@@ -348,7 +348,7 @@ main {
 /*--- Clase del de footer----*/
 
 footer {
-    background: rgb(255,238,195);
+    background: $backgroung-main;
     background: radial-gradient(circle, rgba(255,238,195,1) 32%, rgba(176,154,121,1) 76%);
     grid-area: footer;
     display: flex;
@@ -376,7 +376,7 @@ footer {
 
 .redes:hover{
     transform: scale(1.2);
-    text-shadow: 5px 6px 2px #5a5d5e;
+    text-shadow: 5px 6px 2px $sombra-texto;
 }
 
 .fa-envelope{
@@ -403,7 +403,7 @@ footer {
 
 .redes__ig:hover{
     transform: scale(1.2);
-    text-shadow: 5px 6px 2px #5a5d5e;
+    text-shadow: 5px 6px 2px $sombra-texto;
 }
 
 /*--- Clase de Pagina de Formulario----*/
@@ -411,7 +411,7 @@ footer {
 .form{
     /* width: 40%; */
     width: auto;
-    color:#230f6b;
+    color:$color-h1;
     font-family: 'Poppins', sans-serif;
     text-shadow: 2px 2px 3px #676a6b;
     text-align:center;
@@ -453,7 +453,7 @@ footer {
         width: 350px;
         height: 350px;
         border-radius: 10px;
-        box-shadow: 7px 7px 10px #592A08; 
+        box-shadow: 7px 7px 10px $box-shadow; 
         object-fit: cover;
     }
     .formulario__order {
@@ -485,7 +485,7 @@ footer {
         width: 350px;
         height: 350px;
         border-radius: 10px;
-        box-shadow: 7px 7px 10px #592A08; 
+        box-shadow: 7px 7px 10px $box-shadow; 
         object-fit: cover;
     }
 }
