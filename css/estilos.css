@@ -1,16 +1,18 @@
 @charset "UTF-8";
+/*Variables*/
+/*Maps*/
 @import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:wght@300;400&family=Roboto&display=swap");
-/*Fuentes
-font-family: 'Poppins', sans-serif;
-font-family: 'Roboto', sans-serif;
-font-family: 'Permanent Marker', cursive;
-*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/*Fuentes
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Permanent Marker', cursive;
+*/
 body {
   height: 100vh;
   background-color: beige;
@@ -37,13 +39,15 @@ header {
   background-repeat: round;
 }
 
-.header__titulo {
+.header__titulo, .logo {
+  /*mixin*/
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .logo {
+  /*Extend*/
   padding: 5px;
   width: 6rem;
   border-radius: 20px;
@@ -198,8 +202,8 @@ main {
 .items-describa {
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
-  align-content: center;
   font-family: "Poppins", sans-serif;
   font-weight: bolder;
   font-size: larger;
