@@ -28,8 +28,6 @@ column-gap: 1px;
 
 header {
    grid-area: header;
-   /*background: rgb(107,105,133);
-   background: linear-gradient(180deg, rgba(107,105,133,0.969625350140056) 1%, rgba(156,130,57,1) 22%, rgba(188,193,159,1) 94%);*/
    background-image:
    $backgroung-header-img,
     url(../Images/Mascotas/header2.jpg);
@@ -70,7 +68,6 @@ header {
 h1{
     font-family: 'Permanent Marker', cursive;
     font-size: 60px;
-    /*color: indigo;*/
     color: $color-h1;
     text-align: center;
     text-shadow: 2px 4px 2px $sombra-texto;
@@ -106,8 +103,6 @@ h1:hover{
 }
 
 .menu__boton:hover{
-    /*padding-left: 1.5%;
-    padding-right: 1.5%;*/
     background-color:ghostwhite;
     box-shadow: 15px 15px 25px $box-shadow; 
     transform: scale(1.2);
